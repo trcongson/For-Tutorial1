@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<script>
+    function isNguyenTo(a) {
+        if (a < 2) {
+            return false;
+        }
+        if (a === 2) {
+            return true;
+        }
+        for (let i = 2; i < a; i++) {
+            if ((a % i) === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    let i = 1;
+    while (isNguyenTo(i)%5 !==0){
+        i++;
+        document.write(i);
+    }
+
+</script>
+</body>
+</html>
